@@ -1,4 +1,4 @@
-FROM alpine-s6-base
+FROM raxetul/alpine-s6-base
 MAINTAINER Emrah URHAN <raxetul@gmail.com>
 
 COPY nginx-service /s6/nginx-service
