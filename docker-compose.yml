@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  nginx:
+    image: alpine-s6-nginx
+    volumes:
+      - ./conf:/conf
+      - ./log:/log
+      - ./web:/web
+    ports:
+      - 8000:80
