@@ -1,4 +1,6 @@
-FROM raxetul/alpine-s6-base
+ARG TAG=amd64
+FROM raxetul/alpine-s6-base:$TAG
+
 MAINTAINER Emrah URHAN <raxetul@gmail.com>
 
 COPY nginx-service /s6/nginx-service
