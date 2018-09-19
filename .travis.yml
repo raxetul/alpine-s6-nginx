@@ -10,7 +10,7 @@ script:
         - . docker_push amd64-edge
         - echo "-----------------------------------------------------------------------------------------"
 
-        - echo "REGISTERIN QEMU FOR CROSS BUILD *********************************************************"
+        - echo "REGISTERING QEMU FOR CROSS BUILD *********************************************************"
         # prepare qemu
         - docker run --rm --privileged multiarch/qemu-user-static:register --reset      
 
