@@ -1,6 +1,4 @@
 sudo: required
-env:
-        REPO_NAME=alpine-s6-base
 services:
         - docker
 language: bash
