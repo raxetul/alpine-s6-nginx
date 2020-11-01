@@ -1,7 +1,6 @@
-ARG TAG=amd64
-FROM raxetul/alpine-s6-base:$TAG
+FROM raxetul/alpine-s6-base
 
-MAINTAINER Emrah URHAN <raxetul@gmail.com>
+LABEL maintainer="Emrah URHAN <raxetul@gmail.com>"
 
 COPY nginx-service /s6/nginx-service
 RUN apk update && apk add --no-cache \
